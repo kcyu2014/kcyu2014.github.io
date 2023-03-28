@@ -1,84 +1,216 @@
----
----
+@string{eccv = {European Conference on Computer Vision,}}
+@string{iccv = {International Conference on Computer Vision,}}
+@string{cvpr = {IEEE Conference of Computer Vision and Pattern Recognition,}}
+@string{icml = {International Conference on Machine Learning,}}
+@string{nips = {Annual Conference on Neural Information Processing Systems,}}
+@string{iclr = {International Conference on Learning Representations,}}
+@string{ijcv = {International Journal of Computer Vision,}}
+@string{tpami = {IEEE Transactions on Pattern Analysis and Machine Intelligence,}}
+@string{tmm = {IEEE Transactions on Multimedia,}}
+@string{cvprw = {IEEE Conference on Computer Vision and Pattern Recognition Workshops,}}
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+
+@inproceedings{yu_smsop_2018,
+	title = {Statistically-motivated {Second}-order {Pooling}},
+	abstract = {Second-order pooling, a.k.a. bilinear pooling, has proven effective for deep learning based visual recognition. However, the resulting second-order networks yield a final representation that is orders of magnitude larger than that of standard, first-order ones, making them memory-intensive and cumbersome to deploy. Here, we introduce a general, parametric compression strategy that can produce more compact representations than existing compression techniques, yet outperform both compressed and uncompressed second-order models. Our approach is motivated by a statistical analysis of the network’s activations, relying on operations that lead to a Gaussian-distributed final representation, as inherently used by first-order deep networks. As evidenced by our experiments, this lets us outperform the state-of-the-art first-order and second-order models on several benchmark recognition datasets.},
+	language = {en},
+	author = {Yu, Kaicheng and Salzmann, Mathieu},
+	pages = {17},
+	booktitle = eccv,
+	selected = {true},
+	year = {2018},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{yu_second-order_2017,
+	title = {Second-order {Convolutional} {Neural} {Networks}},
+	copyright = {CC0 1.0 Universal Public Domain Dedication},
+	url = {http://arxiv.org/abs/1703.06817},
+	abstract = {Convolutional Neural Networks (CNNs) have been successfully applied to many computer vision tasks, such as image classiﬁcation. By performing linear combinations and element-wise nonlinear operations, these networks can be thought of as extracting solely ﬁrst-order information from an input image. In the past, however, second-order statistics computed from handcrafted features, e.g., covariances, have proven highly effective in diverse recognition tasks. In this paper, we introduce a novel class of CNNs that exploit second-order statistics. To this end, we design a series of new layers that (i) extract a covariance matrix from convolutional activations, (ii) compute a parametric, second-order transformation of a matrix, and (iii) perform a parametric vectorization of a matrix. These operations can be assembled to form a Covariance Descriptor Unit (CDU), which replaces the fully-connected layers of standard CNNs. Our experiments demonstrate the beneﬁts of our new architecture, which outperform the ﬁrst-order CNNs, while relying on up to 90\% fewer parameters.},
+	language = {en},
+	urldate = {2018-10-03},
+	journal = {Technical Report, arXiv:1703.06817 [cs.CV]},
+	author = {Yu, Kaicheng and Salzmann, Mathieu},
+	month = mar,
+	year = {2017},
+	note = {arXiv: 1703.06817},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	file = {Yu and Salzmann - 2017 - Second-order Convolutional Neural Networks.pdf:/Users/kyu/Zotero/storage/AKTX4CAT/Yu and Salzmann - 2017 - Second-order Convolutional Neural Networks.pdf:application/pdf},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@inproceedings{mehta_nas-bench-suite_2022,
+  author = {Mehta, Yash and White, Colin and Zela, Arber and Krishnakumar, Arjun and Zabergja, Guri and Moradian, Shakiba and Safari, Mahmoud and Yu, Kaicheng and Hutter, Frank},
+  booktitle       = iclr,
+  title           = {{NAS}-{Bench}-{Suite}: {NAS} {Evaluation} is ({Now}) {Surprisingly} {Easy}},
+  year            = {2022},
+  abstract = {The release of tabular benchmarks, such as NAS-Bench-101 and NAS-Bench-201, has signiﬁcantly lowered the computational overhead for conducting scientiﬁc research in neural architecture search (NAS). Although they have been widely adopted and used to tune real-world NAS algorithms, these benchmarks are limited to small search spaces and focus solely on image classiﬁcation. Recently, several new NAS benchmarks have been introduced that cover signiﬁcantly larger search spaces over a wide range of tasks, including object detection, speech recognition, and natural language processing. However, substantial differences among these NAS benchmarks have so far prevented their widespread adoption, limiting researchers to using just a few benchmarks. In this work, we present an in-depth analysis of popular NAS algorithms and performance prediction methods across 25 different combinations of search spaces and datasets, ﬁnding that many conclusions drawn from a few NAS benchmarks do not generalize to other benchmarks. To help remedy this problem, we introduce NAS-Bench-Suite, a comprehensive and extensible collection of NAS benchmarks, accessible through a uniﬁed interface, created with the aim to facilitate reproducible, generalizable, and rapid NAS research. Our code is available at https://github.com/automl/naslib.},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@inproceedings{hu_pyramid_2021,
+	title = {Pyramid {Architecture} {Search} for {Real}-{Time} {Image} {Deblurring}},
+	abstract = {Multi-scale and multi-patch deep models have been shown effective in removing blurs of dynamic scenes. However, these methods still suffer from one major obstacle: manually designing a lightweight and high-efﬁciency network is challenging and time-consuming. To tackle this obstacle, we propose a novel deblurring method, dubbed PyNAS (pyramid neural architecture search network), towards automatically designing hyper-parameters including the scales, patches, and standard cell operators. The proposed PyNAS adopts gradient-based search strategies and innovatively searches the hierarchy patch and scale scheme not limited to cell searching. Speciﬁcally, we introduce a hierarchical search strategy tailored to the multiscale and multi-patch deblurring task. The strategy follows the principle that the ﬁrst distinguishes between the toplevel (pyramid-scales and pyramid-patches) and bottomlevel variables (cell operators) and then searches multiscale variables using the top-to-bottom principle. During the search stage, PyNAS employs an early stopping strategy to avoid the collapse and computational issues. Furthermore, we use a path-level binarization mechanism for multi-scale cell searching to save the memory consumption. Our primary contribution is a real-time deblurring algorithm (around 58 fps) for 720p images while achieves stateof-the-art deblurring performance on the GoPro and Video Deblurring datasets.},
+	author = {Hu, Xiaobin and Ren, Wenqi and Yu, Kaicheng and Zhang, Kaihao and Cao, Xiaochun and Liu, Wei and Menze, Bjoern and Munchen, TU},
+	pages = {10},
+	booktitle = iccv,
+	year = {2021}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{yu_analysis_2023,
+	title = {An {Analysis} of {Super}-{Net} {Heuristics} in {Weight}-{Sharing} {NAS}},
+	volume = {14},
+	abstract = {Weight sharing promises to make neural architecture search (NAS) tractable even on commodity hardware. Existing methods in this space rely on a diverse set of heuristics to design and train the shared-weight backbone network, a.k.a. the super-net. Since heuristics substantially vary across different methods and have not been carefully studied, it is unclear to which extent they impact super-net training and hence the weight-sharing NAS algorithms. In this paper, we disentangle super-net training from the search algorithm, isolate 14 frequently-used training heuristics, and evaluate them over three benchmark search spaces. Our analysis uncovers that several commonly-used heuristics negatively impact the correlation between super-net and stand-alone performance, whereas simple, but often overlooked factors, such as proper hyper-parameter settings, are key to achieve strong performance. Equipped with this knowledge, we show that simple random search achieves competitive performance to complex state-of-the-art NAS algorithms when the super-net is properly trained.},
+	language = {en},
+	number = {8},
+	journal = tpami,
+	author = {Yu, Kaicheng and Ranftl, Rene and Salzmann, Mathieu},
+	year = {2023},
+	pages = {14},
+	selected = {true},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{yu_evaluating_2020,
+	title = {Evaluating the {Search} {Phase} of {Neural} {Architecture} {Search}},
+	url = {http://arxiv.org/abs/1902.08142},
+	abstract = {Neural Architecture Search (NAS) aims to facilitate the design of deep networks for new tasks. Existing techniques rely on two stages: searching over the architecture space and validating the best architecture. NAS algorithms are currently compared solely based on their results on the downstream task. While intuitive, this fails to explicitly evaluate the effectiveness of their search strategies. In this paper, we propose to evaluate the NAS search phase. To this end, we compare the quality of the solutions obtained by NAS search policies with that of random architecture selection. We ﬁnd that: (i) On average, the state-of-the-art NAS algorithms perform similarly to the random policy; (ii) the widely-used weight sharing strategy degrades the ranking of the NAS candidates to the point of not reﬂecting their true performance, thus reducing the effectiveness of the search process. We believe that our evaluation framework will be key to designing NAS strategies that consistently discover architectures superior to random ones.},
+	language = {en},
+	author = {Yu, Kaicheng and Sciuto, Christian and Jaggi, Martin and Musat, Claudiu and Salzmann, Mathieu},
+	month = nov,
+	year = {2020},
+	booktitle = iclr,
+	selected = {true},
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{benyahia_overcoming_2019,
+	title = {Overcoming {Multi}-{Model} {Forgetting}},
+	url = {http://arxiv.org/abs/1902.08232},
+	abstract = {We identify a phenomenon, which we refer to as multi-model forgetting, that occurs when sequentially training multiple deep networks with partially-shared parameters; the performance of previously-trained models degrades as one optimizes a subsequent one, due to the overwriting of shared parameters. To overcome this, we introduce a statistically-justiﬁed weight plasticity loss that regularizes the learning of a model’s shared parameters according to their importance for the previous models, and demonstrate its effectiveness when training two models sequentially and for neural architecture search. Adding weight plasticity in neural architecture search preserves the best models to the end of the search and yields improved results in both natural language processing and computer vision tasks.},
+	language = {en},
+	booktitle = icml,
+	author = {Benyahia, Yassine and Yu, Kaicheng and Bennani-Smires, Kamil and Jaggi, Martin and Davison, Anthony and Salzmann, Mathieu and Musat, Claudiu},
+	month = mar,
+	year = {2019},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+}
+
+@inproceedings{wang_recurrent_2019,
+	title = {Recurrent {U}-{Net} for {Resource}-{Constrained} {Segmentation}},
+	url = {http://arxiv.org/abs/1906.04913},
+	abstract = {State-of-the-art segmentation methods rely on very deep networks that are not always easy to train without very large training datasets and tend to be relatively slow to run on standard GPUs. In this paper, we introduce a novel recurrent U-Net architecture that preserves the compactness of the original U-Net [30], while substantially increasing its performance to the point where it outperforms the state of the art on several benchmarks. We will demonstrate its effectiveness for several tasks, including hand segmentation, retina vessel segmentation, and road segmentation. We also introduce a large-scale dataset for hand segmentation.},
+	language = {en},
+	author = {Wang, Wei and Yu, Kaicheng and Hugonot, Joachim and Fua, Pascal and Salzmann, Mathieu},
+	month = jun,
+	year = {2019},
+	booktitle = iccv
+}
+
+@inproceedings{zhang_painting_2023,
+	title = {Painting {3D} {Nature} in {2D}: {View} {Synthesis} of {Natural} {Scenes} from a {Single} {Semantic} {Mask}},
+	language = {en},
+	author = {Zhang, Shangzhan and Peng, Sida and Chen, Tianrun and Mou, Linzhan and Yu, Kaicheng and Liao, Yiyi and Zhou, Xiaowei and Lin, Haotong},
+	booktitle = cvpr,
+	year = {2023},
+}
+
+@inproceedings{yu_landmark_2021,
+	title = {Landmark {Regularization}: {Ranking} {Guided} {Super}-{Net} {Training} in {Neural} {Architecture} {Search}},
+	shorttitle = {Landmark {Regularization}},
+	url = {http://arxiv.org/abs/2104.05309},
+	abstract = {Weight sharing has become a de facto standard in neural architecture search because it enables the search to be done on commodity hardware. However, recent works have empirically shown a ranking disorder between the performance of stand-alone architectures and that of the corresponding shared-weight networks. This violates the main assumption of weight-sharing NAS algorithms, thus limiting their effectiveness. We tackle this issue by proposing a regularization term that aims to maximize the correlation between the performance rankings of the shared-weight network and that of the standalone architectures using a small set of landmark architectures. We incorporate our regularization term into three different NAS algorithms and show that it consistently improves performance across algorithms, search-spaces, and tasks.},
+	language = {en},
+	urldate = {2023-03-23},
+	author = {Yu, Kaicheng and Ranftl, Rene and Salzmann, Mathieu},
+	month = apr,
+	year = {2021},
+	booktitle = cvpr,
+	selected = {true},
+}
+
+@inproceedings{lin_knowledge_2023,
+	title = {Knowledge {Distillation} via the {Target}-aware {Transformer}},
+	abstract = {Knowledge distillation becomes a de facto standard to improve the performance of small neural networks. Most of the previous works propose to regress the representational features from the teacher to the student in a oneto-one spatial matching fashion. However, people tend to overlook the fact that, due to the architecture differences, the semantic information on the same spatial location usually vary. This greatly undermines the underlying assumption of the one-to-one distillation approach. To this end, we propose a novel one-to-all spatial matching knowledge distillation approach. Specifically, we allow each pixel of the teacher feature to be distilled to all spatial locations of the student features given its similarity, which is generated from a target-aware transformer. Our approach surpasses the state-of-the-art methods by a significant margin on various computer vision benchmarks, such as ImageNet, Pascal VOC and COCOStuff10k. Code will be released soon.},
+	language = {en},
+	author = {Lin, Sihao and Xie, Hongwei and Wang, Bing and Yu, Kaicheng and Chang, Xiaojun and Liang, Xiaodan and Wang, Gang},
+	booktitle = cvpr,
+	year = {2022},
+}
+
+@inproceedings{liang_bevfusion_2022,
+	title = {{BEVFusion}: {A} {Simple} and {Robust} {LiDAR}-{Camera} {Fusion} {Framework}},
+	shorttitle = {{BEVFusion}},
+	url = {http://arxiv.org/abs/2205.13790},
+	abstract = {Fusing the camera and LiDAR information has become a de-facto standard for 3D object detection tasks. Current methods rely on point clouds from the LiDAR sensor as queries to leverage the feature from the image space. However, people discovered that this underlying assumption makes the current fusion framework infeasible to produce any prediction when there is a LiDAR malfunction, regardless of minor or major. This fundamentally limits the deployment capability to realistic autonomous driving scenarios. In contrast, we propose a surprisingly simple yet novel fusion framework, dubbed BEVFusion, whose camera stream does not depend on the input of LiDAR data, thus addressing the downside of previous methods. We empirically show that our framework surpasses the state-of-the-art methods under the normal training settings. Under the robustness training settings that simulate various LiDAR malfunctions, our framework signiﬁcantly surpasses the state-of-the-art methods by 15.7\% to 28.9\% mAP. To the best of our knowledge, we are the ﬁrst to handle realistic LiDAR malfunction and can be deployed to realistic scenarios without any post-processing procedure. The code is available at https://github.com/ADLab-AutoDrive/BEVFusion.},
+	language = {en},
+	author = {Liang, Tingting and Xie, Hongwei and Yu, Kaicheng and Xia, Zhongyu and Lin, Zhiwei and Wang, Yongtao and Tang, Tao and Wang, Bing and Tang, Zhi},
+	month = nov,
+	year = {2022},
+	booktitle = nips,
+	selected = {true},
+}
+
+@inproceedings{yu_benchmarking_2023,
+	title = {Benchmarking the {Robustness} of {LiDAR}-{Camera} {Fusion} for {3D} {Object} {Detection}},
+	abstract = {There are two critical sensors for 3D perception in autonomous driving, the camera and the LiDAR. The camera provides rich semantic information such as color, texture, and the LiDAR reﬂects the 3D shape and locations of surrounding objects. People discover that fusing these two modalities can signiﬁcantly boost the performance of 3D perception models as each modality has complementary information to the other. However, we observe that current datasets are captured from expensive vehicles that are explicitly designed for data collection purposes, and cannot truly reﬂect the realistic data distribution due to various reasons. To this end, we collect a series of real-world cases with noisy data distribution, and systematically formulate a robustness benchmark toolkit, that simulates these cases on any clean autonomous driving datasets. We showcase the effectiveness of our toolkit by establishing the robustness benchmark on two widely-adopted autonomous driving datasets, nuScenes and Waymo, then, to the best of our knowledge, holistically benchmark the state-of-the-art fusion methods for the ﬁrst time. We observe that: i) most fusion methods, when solely developed on these data, tend to fail inevitably when there is a disruption to the LiDAR input; ii) the improvement of the camera input is signiﬁcantly inferior to the LiDAR one. We further propose an efﬁcient robust training strategy to improve the robustness of the current fusion method. The benchmark and code are available at https://github.com/kcyu2014/lidar-camerarobust-benchmark.},
+	language = {en},
+	author = {Yu, Kaicheng and Tao, Tang and Xie, Hongwei and Lin, Zhiwei and Wu, Zhongwei and Xia, Zhongyu and Liang, Tingting and Sun, Haiyang and Deng, Jiong and Hao, Dayang and Wang, Yongtao and Liang, Xiaodan and Wang, Bing},
+	month = may,
+	year = {2023},
+	booktitle = cvprw,
+	selected = {true},
+}
+
+@article{tang_learning_2022,
+	title = {Learning {Self}-{Regularized} {Adversarial} {Views} for {Self}-{Supervised} {Vision} {Transformers}},
+	abstract = {Automatic data augmentation (AutoAugment) strategies are indispensable in supervised data-efﬁcient training protocols of vision transformers, and have led to state-of-the-art results in supervised learning. Despite the success, its development and application on self-supervised vision transformers have been hindered by several barriers, including the high search cost, the lack of supervision, and the unsuitable search space. In this work, we propose AutoView, a self-regularized adversarial AutoAugment method, to learn views for self-supervised vision transformers, by addressing the above barriers. First, we reduce the search cost of AutoView to nearly zero by learning views and network parameters simultaneously in a single forward-backward step, minimizing and maximizing the mutual information among different augmented views, respectively. Then, to avoid information collapse caused by the lack of label supervision, we propose a self-regularized loss term to guarantee the information propagation. Additionally, we present a curated augmentation policy search space for self-supervised learning, by modifying the generally used search space designed for supervised learning. On ImageNet, our AutoView achieves remarkable improvement over RandAug baseline (+10.2\% k-NN accuracy), and consistently outperforms sota manually tuned view policy by a clear margin (up to +1.3\% k-NN accuracy). Extensive experiments show that AutoView pretraining also beneﬁts downstream tasks (+1.2\% mAcc on ADE20K Semantic Segmentation and +2.8\% mAP on revisited Oxford Image Retrieval benchmark) and improves model robustness (+2.3\% Top-1 Acc on ImageNet-A and +1.0\% AUPR on ImageNet-O). Code and models will be available at https://github.com/Trent-tangtao/AutoView.},
+	language = {en},
+	journal         = tpami,
+	author = {Tang, Tao and Li, Changlin and Wang, Guangrun and Yu, Kaicheng and Chang, Xiaojun and Liang, Xiaodan},
+	month = oct,
+	year = {2022},
+	note = {in submission},
+}
+
+@misc{guo_semantic_darts_2022,
+	title = {\${\textbackslash}alpha\$ {DARTS} {Once} {More}: {Enhancing} {Differentiable} {Architecture} {Search} by {Masked} {Image} {Modeling}},
+	shorttitle = {\${\textbackslash}alpha\$ {DARTS} {Once} {More}},
+	url = {http://arxiv.org/abs/2211.10105},
+	abstract = {Differentiable architecture search (DARTS) has been a mainstream direction in automatic machine learning. Since the discovery that original DARTS will inevitably converge to poor architectures, recent works alleviate this by either designing rule-based architecture selection techniques or incorporating complex regularization techniques, abandoning the simplicity of the original DARTS that selects architectures based on the largest parametric value, namely α. Moreover, we ﬁnd that all the previous attempts only rely on classiﬁcation labels, hence learning only single modal information and limiting the representation power of the shared network. To this end, we propose to additionally inject semantic information by formulating a patch recovery approach. Speciﬁcally, we exploit the recent trending masked image modeling and do not abandon the guidance from the downstream tasks during the search phase. Our method surpasses all previous DARTS variants and achieves the state-of-the-art results on CIFAR10, CIFAR-100 and ImageNet without complex manualdesigned strategies.},
+	language = {en},
+	urldate = {2023-03-23},
+	publisher = {arXiv},
+	author = {Guo, Bicheng and Guo, Shuxuan and Shi, Miaojing and Chen, Peng and He, Shibo and Chen, Jiming and Yu, Kaicheng},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2211.10105 [cs]},
+}
+
+@inproceedings{yang_bevheight_2023,
+	title = {{BEVHeight}: {A} {Robust} {Framework} for {Vision}-based {Roadside} {3D} {Object} {Detection}},
+	shorttitle = {{BEVHeight}},
+	url = {http://arxiv.org/abs/2303.08498},
+	abstract = {While most recent autonomous driving system focuses on developing perception methods on ego-vehicle sensors, people tend to overlook an alternative approach to leverage intelligent roadside cameras to extend the perception ability beyond the visual range. We discover that the state-of-the-art vision-centric bird's eye view detection methods have inferior performances on roadside cameras. This is because these methods mainly focus on recovering the depth regarding the camera center, where the depth difference between the car and the ground quickly shrinks while the distance increases. In this paper, we propose a simple yet effective approach, dubbed BEVHeight, to address this issue. In essence, instead of predicting the pixel-wise depth, we regress the height to the ground to achieve a distance-agnostic formulation to ease the optimization process of camera-only perception methods. On popular 3D detection benchmarks of roadside cameras, our method surpasses all previous vision-centric methods by a significant margin. The code is available at \{{\textbackslash}url\{https://github.com/ADLab-AutoDrive/BEVHeight\}\}.},
+	language = {en},
+	author = {Yang, Lei and Yu, Kaicheng and Tang, Tao and Li, Jun and Yuan, Kun and Wang, Li and Zhang, Xinyu and Chen, Peng},
+	month = mar,
+	year = {2023},
+	booktitle = cvpr,
+}
+
+@inproceedings{mi_generalized_2020,
+	address = {Seattle, WA, USA},
+	title = {Generalized {Class} {Incremental} {Learning}},
+	isbn = {978-1-72819-360-1},
+	url = {https://ieeexplore.ieee.org/document/9150844/},
+	doi = {10.1109/CVPRW50498.2020.00128},
+	abstract = {Many real-world machine learning systems require the ability to continually learn new knowledge. Class incremental learning receives increasing attention recently as a solution towards this goal. However, existing methods often introduce some assumptions to simplify the problem setting, which rarely holds in real-world scenarios. In this paper, we formulate a Generalized Class Incremental Learning (GCIL) framework to systematically alleviate these restrictions, and introduce several novel realistic incremental learning scenarios. In addition, we propose a simple yet effective method, namely ReMix, which combines Exemplar Replay (ER) and Mixup to deal with different challenges in realistic GCIL setups. We demonstrate on CIFAR-100 that ReMix outperforms the state-of-the-art methods in different GCIL setups by signiﬁcant margins without introducing additional computation cost.},
+	language = {en},
+	urldate = {2023-03-23},
+	booktitle = cvprw,
+	publisher = {IEEE},
+	author = {Mi, Fei and Kong, Lingjing and Lin, Tao and Yu, Kaicheng and Faltings, Boi},
+	month = jun,
+	year = {2020},
+	pages = {970--974},
+	file = {Mi 等 - 2020 - Generalized Class Incremental Learning.pdf:/Users/kyu/Zotero/storage/YYWCE8BX/Mi 等 - 2020 - Generalized Class Incremental Learning.pdf:application/pdf},
 }
