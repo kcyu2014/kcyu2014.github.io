@@ -25,6 +25,7 @@ Current openings:
 - full-time research internship targeting towards top-tier conferences
 - 3-6 months algorithm engineer internship towards realistic challenges in autonomous driving scenarios
 - full-time employee in autonomous perception system
+
 Please shoot an email with your resume to me if you are interested!
 
 ### Short Bio
