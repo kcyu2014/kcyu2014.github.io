@@ -7,6 +7,14 @@ nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+# Teaching experience
 
-Organize your courses by years, topics, or universities, however you like!
+I served as teaching assistant for the following courses:
+- EPFL, 2022 Fall, Introduction to machine learning
+- EPFL, 2020 Spring, Computer vision
+- EPFL, 2018 Fall, Information, Calculation and Communication
+- EPFL, 2018 Spring, System of data science
+- EPFL, 2017 Fall, Information, Calculation and Communication
+- EPFL, 2017 Spring, Information, Calculation and Communication
+- HKU, 2015 Spring, Object-oriented programming and Java
+- HKU, 2014 Spring, Introduction to electric and electronics engineering
