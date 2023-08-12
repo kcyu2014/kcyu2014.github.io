@@ -22,7 +22,7 @@ social: true  # includes social icons at the bottom of the page
 `We are hiring at all levels!` 
 
 Current openings:
-- PhD Student (joint program with Zhejiang University)
+- PhD Student (joint program with Zhejiang University), starting from Fall 2024.
 - 3-6 months algorithm engineer internship towards realistic challenges in autonomous driving scenarios
 - PostDoc
 
