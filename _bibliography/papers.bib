@@ -1,13 +1,93 @@
-@string{eccv = {European Conference on Computer Vision,}}
-@string{iccv = {International Conference on Computer Vision,}}
-@string{cvpr = {IEEE Conference of Computer Vision and Pattern Recognition,}}
-@string{icml = {International Conference on Machine Learning,}}
-@string{nips = {Annual Conference on Neural Information Processing Systems,}}
-@string{iclr = {International Conference on Learning Representations,}}
-@string{ijcv = {International Journal of Computer Vision,}}
-@string{tpami = {IEEE Transactions on Pattern Analysis and Machine Intelligence,}}
-@string{tmm = {IEEE Transactions on Multimedia,}}
-@string{cvprw = {IEEE Conference on Computer Vision and Pattern Recognition Workshops,}}
+@string{eccv = {European Conference on Computer Vision}}
+@string{iccv = {International Conference on Computer Vision}}
+@string{cvpr = {IEEE Conference of Computer Vision and Pattern Recognition}}
+@string{icml = {International Conference on Machine Learning}}
+@string{nips = {Annual Conference on Neural Information Processing Systems}}
+@string{iclr = {International Conference on Learning Representations}}
+@string{ijcv = {International Journal of Computer Vision}}
+@string{tpami = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
+@string{tmm = {IEEE Transactions on Multimedia}}
+@string{mm = {ACM International Conference on Multimedia}}
+@string{cvprw = {IEEE Conference on Computer Vision and Pattern Recognition Workshops}}
+
+
+@inproceedings{tao-2024-LiDARNeRFNovelLiDAR,
+	address = {Melbourne VIC Australia},
+	title = {{LiDAR}-{NeRF}: {Novel} {LiDAR} {View} {Synthesis} via {Neural} {Radiance} {Fields}},
+	isbn = {9798400706868},
+	shorttitle = {{LiDAR}-{NeRF}},
+	url = {https://dl.acm.org/doi/10.1145/3664647.3681482},
+	doi = {10.1145/3664647.3681482},
+	abstract = {We introduce a new task, novel view synthesis for LiDAR sensors. While traditional model-based LiDAR simulators with style-transfer neural networks can be applied to render novel views, they fall short of producing accurate and realistic LiDAR patterns because the renderers rely on explicit 3D reconstruction and exploit game engines, that ignore important attributes of LiDAR points. We address this challenge by formulating, to the best of our knowledge, the first differentiable end-to-end LiDAR rendering framework, LiDAR-NeRF, leveraging a neural radiance field (NeRF) to facilitate the joint learning of geometry and the attributes of 3D points. However, simply employing NeRF cannot achieve satisfactory results, as it only focuses on learning individual pixels while ignoring local information, especially at low texture areas, resulting in poor geometry. To this end, we have taken steps to address this issue ∗Work done during an internship at Westlake University.},
+	language = {en},
+	urldate = {2024-11-05},
+	booktitle = mm,
+	publisher = {ACM},
+	author = {Tao, Tang and Gao, Longfei and Wang, Guangrun and Lao, Yixing and Chen, Peng and Zhao, Hengshuang and Hao, Dayang and Liang, Xiaodan and Salzmann, Mathieu and Yu, Kaicheng},
+	month = oct,
+	year = {2024},
+	pages = {390--398},
+	file = {3664647.3681482.pdf:/Users/kyu/Zotero/storage/Q3PXE8FF/3664647.3681482.pdf:application/pdf},
+}
+
+@inproceedings{tao-2024-AlignMiFGeometryAlignedMultimodal,
+	address = {Seattle, WA, USA},
+	title = {{AlignMiF}: {Geometry}-{Aligned} {Multimodal} {Implicit} {Field} for {LiDAR}-{Camera} {Joint} {Synthesis}},
+	copyright = {https://doi.org/10.15223/policy-029},
+	isbn = {9798350353006},
+	shorttitle = {{AlignMiF}},
+	url = {https://ieeexplore.ieee.org/document/10655611/},
+	doi = {10.1109/CVPR52733.2024.02006},
+	abstract = {Neural implicit ﬁelds have been a de facto standard in novel view synthesis. Recently, there exist some methods exploring fusing multiple modalities within a single ﬁeld, aiming to share implicit features from different modalities to enhance reconstruction performance. However, these modalities often exhibit misaligned behaviors: optimizing for one modality, such as LiDAR, can adversely affect another, like camera performance, and vice versa. In this work, we conduct comprehensive analyses on the multimodal implicit ﬁeld of LiDAR-camera joint synthesis, revealing the underlying issue lies in the misalignment of different sensors. Furthermore, we introduce AlignMiF, a geometrically aligned multimodal implicit ﬁeld with two proposed modules: Geometry-Aware Alignment (GAA) and Shared Geometry Initialization (SGI). These modules effectively align the coarse geometry across different modalities, signiﬁcantly enhancing the fusion process between LiDAR and camera data. Through extensive experiments across various datasets and scenes, we demonstrate the effectiveness of our approach in facilitating better interaction between LiDAR and camera modalities within a uniﬁed neural ﬁeld. Speciﬁcally, our proposed AlignMiF, achieves remarkable improvement over recent implicit fusion methods (+2.01 and +3.11 image PSNR on the KITTI-360 and Waymo datasets) and consistently surpasses single modality performance (13.8\% and 14.2\% reduction in LiDAR Chamfer Distance on the respective datasets). Code release: https://github.com/tangtaogo/alignmif.},
+	language = {en},
+	urldate = {2024-11-05},
+	booktitle = cvpr,
+	publisher = {IEEE},
+	author = {Tao, Tang and Wang, Guangrun and Lao, Yixing and Chen, Peng and Liu, Jie and Lin, Liang and Yu, Kaicheng and Liang, Xiaodan},
+	month = jun,
+	year = {2024},
+	pages = {21230--21240},
+	file = {Tao_AlignMiF_Geometry-Aligned_Multimodal_Implicit_Field_for_LiDAR-Camera_Joint_Synthesis_CVPR_2024_paper.pdf:/Users/kyu/Zotero/storage/9FZ4EJ6E/Tao_AlignMiF_Geometry-Aligned_Multimodal_Implicit_Field_for_LiDAR-Camera_Joint_Synthesis_CVPR_2024_paper.pdf:application/pdf},
+}
+
+@incollection{zhang-2025-OpenSightSimpleOpenVocabulary,
+	address = {Cham},
+	title = {{OpenSight}: {A} {Simple} {Open}-{Vocabulary} {Framework} for {LiDAR}-{Based} {Object} {Detection}},
+	volume = {15142},
+	isbn = {978-3-031-72906-5 978-3-031-72907-2},
+	shorttitle = {{OpenSight}},
+	url = {https://link.springer.com/10.1007/978-3-031-72907-2_1},
+	abstract = {Traditional LiDAR-based object detection research primarily focuses on closed-set scenarios, which falls short in complex real-world applications. Directly transferring existing 2D open-vocabulary models with some known LiDAR classes for open-vocabulary ability, however, tends to suffer from over-fitting problems: The obtained model will detect the known objects, even presented with a novel category. In this paper, we propose OpenSight, a more advanced 2D-3D modeling framework for LiDAR-based open-vocabulary detection. OpenSight utilizes 2D-3D geometric priors for the initial discernment and localization of generic objects, followed by a more specific semantic interpretation of the detected objects. The process begins by generating 2D boxes for generic objects from the accompanying camera images of LiDAR. These 2D boxes, together with LiDAR points, are then lifted back into the LiDAR space to estimate corresponding 3D boxes. For better generic object perception, our framework integrates both temporal and spatial-aware constraints. Temporal awareness correlates the predicted 3D boxes across consecutive timestamps, recalibrating the missed or inaccurate boxes. The spatial awareness randomly places some “precisely” estimated 3D boxes at varying distances, increasing the visibility of generic objects. To interpret the specific semantics of detected objects, we develop a cross-modal alignment and fusion module to first align 3D features with 2D image embeddings and then fuse the aligned 3D-2D features for semantic decoding. Our experiments indicate that our method establishes state-of-the-art open-vocabulary performance on widely used 3D detection benchmarks and effectively identifies objects for new categories of interest.},
+	language = {en},
+	urldate = {2024-11-05},
+	booktitle = eccv,
+	publisher = {Springer Nature Switzerland},
+	author = {Zhang, Hu and Xu, Jianhua and Tang, Tao and Sun, Haiyang and Yu, Xin and Huang, Zi and Yu, Kaicheng},
+	editor = {Leonardis, Aleš and Ricci, Elisa and Roth, Stefan and Russakovsky, Olga and Sattler, Torsten and Varol, Gül},
+	year = {2024},
+	doi = {10.1007/978-3-031-72907-2_1},
+	note = {Series Title: Lecture Notes in Computer Science},
+	pages = {1--19},
+	file = {11118.pdf:/Users/kyu/Zotero/storage/UFTPX3ZT/11118.pdf:application/pdf},
+}
+
+@inproceedings{wu-2024-LargeScale3DRepresentation,
+	address = {Seattle, WA, USA},
+	title = {Towards {Large}-{Scale} {3D} {Representation} {Learning} with {Multi}-{Dataset} {Point} {Prompt} {Training}},
+	copyright = {https://doi.org/10.15223/policy-029},
+	isbn = {9798350353006},
+	url = {https://ieeexplore.ieee.org/document/10655492/},
+	doi = {10.1109/CVPR52733.2024.01849},
+	language = {en},
+	urldate = {2024-11-05},
+	booktitle = cvpr,
+	publisher = {IEEE},
+	author = {Wu, Xiaoyang and Tian, Zhuotao and Wen, Xin and Peng, Bohao and Liu, Xihui and Yu, Kaicheng and Zhao, Hengshuang},
+	month = jun,
+	year = {2024},
+	pages = {19551--19562},
+	file = {Wu_Towards_Large-scale_3D_Representation_Learning_with_Multi-dataset_Point_Prompt_Training_CVPR_2024_paper.pdf:/Users/kyu/Zotero/storage/RIZNLDZG/Wu_Towards_Large-scale_3D_Representation_Learning_with_Multi-dataset_Point_Prompt_Training_CVPR_2024_paper.pdf:application/pdf},
+}
 
 
 
