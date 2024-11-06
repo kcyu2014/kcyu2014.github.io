@@ -117,6 +117,226 @@
           <article>
             <!-- _pages/publications.md -->
 <div class="publications">
+  <h2 class="year">2024</h2>
+  <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="tao-2024-LiDARNeRFNovelLiDAR" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">LiDAR-NeRF: Novel LiDAR View Synthesis via Neural Radiance Fields</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tang Tao, Longfei Gao, Guangrun Wang, and
+          <span class="more-authors" title="click to view 7 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '7 more authors' ? 'Yixing Lao, Peng Chen, Hengshuang Zhao, Dayang Hao, Xiaodan Liang, Mathieu Salzmann, Kaicheng Yu' : '7 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">7 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In ACM International Conference on Multimedia</em>, Oct 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1145/3664647.3681482"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1145/3664647.3681482" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>We introduce a new task, novel view synthesis for LiDAR sensors. While traditional model-based LiDAR simulators with style-transfer neural networks can be applied to render novel views, they fall short of producing accurate and realistic LiDAR patterns because the renderers rely on explicit 3D reconstruction and exploit game engines, that ignore important attributes of LiDAR points. We address this challenge by formulating, to the best of our knowledge, the first differentiable end-to-end LiDAR rendering framework, LiDAR-NeRF, leveraging a neural radiance field (NeRF) to facilitate the joint learning of geometry and the attributes of 3D points. However, simply employing NeRF cannot achieve satisfactory results, as it only focuses on learning individual pixels while ignoring local information, especially at low texture areas, resulting in poor geometry. To this end, we have taken steps to address this issue ∗Work done during an internship at Westlake University.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="tao-2024-AlignMiFGeometryAlignedMultimodal" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AlignMiF: Geometry-Aligned Multimodal Implicit Field for LiDAR-Camera Joint Synthesis</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Tang Tao, Guangrun Wang, Yixing Lao, and
+          <span class="more-authors" title="click to view 5 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '5 more authors' ? 'Peng Chen, Jie Liu, Liang Lin, Kaicheng Yu, Xiaodan Liang' : '5 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">5 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Jun 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/CVPR52733.2024.02006"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/CVPR52733.2024.02006" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Neural implicit ﬁelds have been a de facto standard in novel view synthesis. Recently, there exist some methods exploring fusing multiple modalities within a single ﬁeld, aiming to share implicit features from different modalities to enhance reconstruction performance. However, these modalities often exhibit misaligned behaviors: optimizing for one modality, such as LiDAR, can adversely affect another, like camera performance, and vice versa. In this work, we conduct comprehensive analyses on the multimodal implicit ﬁeld of LiDAR-camera joint synthesis, revealing the underlying issue lies in the misalignment of different sensors. Furthermore, we introduce AlignMiF, a geometrically aligned multimodal implicit ﬁeld with two proposed modules: Geometry-Aware Alignment (GAA) and Shared Geometry Initialization (SGI). These modules effectively align the coarse geometry across different modalities, signiﬁcantly enhancing the fusion process between LiDAR and camera data. Through extensive experiments across various datasets and scenes, we demonstrate the effectiveness of our approach in facilitating better interaction between LiDAR and camera modalities within a uniﬁed neural ﬁeld. Speciﬁcally, our proposed AlignMiF, achieves remarkable improvement over recent implicit fusion methods (+2.01 and +3.11 image PSNR on the KITTI-360 and Waymo datasets) and consistently surpasses single modality performance (13.8% and 14.2% reduction in LiDAR Chamfer Distance on the respective datasets). Code release: https://github.com/tangtaogo/alignmif.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="zhang-2025-OpenSightSimpleOpenVocabulary" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">OpenSight: A Simple Open-Vocabulary Framework for LiDAR-Based Object Detection</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Hu Zhang, Jianhua Xu, Tao Tang, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Haiyang Sun, Xin Yu, Zi Huang, Kaicheng Yu' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In European Conference on Computer Vision</em>, Jun 2024
+        </div>
+        <div class="periodical">
+          Series Title: Lecture Notes in Computer Science
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1007/978-3-031-72907-2_1"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1007/978-3-031-72907-2_1" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Traditional LiDAR-based object detection research primarily focuses on closed-set scenarios, which falls short in complex real-world applications. Directly transferring existing 2D open-vocabulary models with some known LiDAR classes for open-vocabulary ability, however, tends to suffer from over-fitting problems: The obtained model will detect the known objects, even presented with a novel category. In this paper, we propose OpenSight, a more advanced 2D-3D modeling framework for LiDAR-based open-vocabulary detection. OpenSight utilizes 2D-3D geometric priors for the initial discernment and localization of generic objects, followed by a more specific semantic interpretation of the detected objects. The process begins by generating 2D boxes for generic objects from the accompanying camera images of LiDAR. These 2D boxes, together with LiDAR points, are then lifted back into the LiDAR space to estimate corresponding 3D boxes. For better generic object perception, our framework integrates both temporal and spatial-aware constraints. Temporal awareness correlates the predicted 3D boxes across consecutive timestamps, recalibrating the missed or inaccurate boxes. The spatial awareness randomly places some “precisely” estimated 3D boxes at varying distances, increasing the visibility of generic objects. To interpret the specific semantics of detected objects, we develop a cross-modal alignment and fusion module to first align 3D features with 2D image embeddings and then fuse the aligned 3D-2D features for semantic decoding. Our experiments indicate that our method establishes state-of-the-art open-vocabulary performance on widely used 3D detection benchmarks and effectively identifies objects for new categories of interest.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="wu-2024-LargeScale3DRepresentation" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Towards Large-Scale 3D Representation Learning with Multi-Dataset Point Prompt Training</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Xiaoyang Wu, Zhuotao Tian, Xin Wen, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '4 more authors' ? 'Bohao Peng, Xihui Liu, Kaicheng Yu, Hengshuang Zhao' : '4 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">4 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Jun 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1109/CVPR52733.2024.01849"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1109/CVPR52733.2024.01849" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+</ol>
+
   <h2 class="year">2023</h2>
   <ol class="bibliography">
 <li>
@@ -138,7 +358,7 @@
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence,</em>, 2023
+          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, Jun 2023
         </div>
         <div class="periodical">
           
@@ -193,7 +413,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference of Computer Vision and Pattern Recognition,</em>, 2023
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Jun 2023
         </div>
         <div class="periodical">
           
@@ -244,7 +464,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference on Computer Vision and Pattern Recognition Workshops,</em>, May 2023
+          <em>In IEEE Conference on Computer Vision and Pattern Recognition Workshops</em>, May 2023
         </div>
         <div class="periodical">
           
@@ -299,7 +519,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference of Computer Vision and Pattern Recognition,</em>, Mar 2023
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Mar 2023
         </div>
         <div class="periodical">
           
@@ -358,7 +578,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Learning Representations,</em>, Mar 2022
+          <em>In International Conference on Learning Representations</em>, Mar 2022
         </div>
         <div class="periodical">
           
@@ -413,7 +633,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference of Computer Vision and Pattern Recognition,</em>, Mar 2022
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Mar 2022
         </div>
         <div class="periodical">
           
@@ -468,7 +688,7 @@
         
         
         <div class="periodical">
-          <em>In Annual Conference on Neural Information Processing Systems,</em>, Nov 2022
+          <em>In Annual Conference on Neural Information Processing Systems</em>, Nov 2022
         </div>
         <div class="periodical">
           
@@ -523,7 +743,7 @@
         
         
         <div class="periodical">
-          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence,</em>, Oct 2022
+          <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, Oct 2022
         </div>
         <div class="periodical">
           in submission
@@ -637,7 +857,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Computer Vision,</em>, Nov 2021
+          <em>In International Conference on Computer Vision</em>, Nov 2021
         </div>
         <div class="periodical">
           
@@ -679,7 +899,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference of Computer Vision and Pattern Recognition,</em>, Apr 2021
+          <em>In IEEE Conference of Computer Vision and Pattern Recognition</em>, Apr 2021
         </div>
         <div class="periodical">
           
@@ -738,7 +958,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Learning Representations,</em>, Nov 2020
+          <em>In International Conference on Learning Representations</em>, Nov 2020
         </div>
         <div class="periodical">
           
@@ -793,7 +1013,7 @@
         
         
         <div class="periodical">
-          <em>In IEEE Conference on Computer Vision and Pattern Recognition Workshops,</em>, Jun 2020
+          <em>In IEEE Conference on Computer Vision and Pattern Recognition Workshops</em>, Jun 2020
         </div>
         <div class="periodical">
           
@@ -852,7 +1072,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Machine Learning,</em>, Mar 2019
+          <em>In International Conference on Machine Learning</em>, Mar 2019
         </div>
         <div class="periodical">
           
@@ -907,7 +1127,7 @@
         
         
         <div class="periodical">
-          <em>In International Conference on Computer Vision,</em>, Jun 2019
+          <em>In International Conference on Computer Vision</em>, Jun 2019
         </div>
         <div class="periodical">
           
@@ -952,7 +1172,7 @@
         
         
         <div class="periodical">
-          <em>In European Conference on Computer Vision,</em>, Jun 2018
+          <em>In European Conference on Computer Vision</em>, Jun 2018
         </div>
         <div class="periodical">
           
@@ -1032,7 +1252,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Kaicheng  Yu. 
+        © Copyright 2024 Kaicheng  Yu. 
       </div>
     </footer>
 
